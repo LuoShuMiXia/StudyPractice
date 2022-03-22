@@ -1,49 +1,66 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 
 #include<stdio.h>
-#define ROW 13
-#define COL ROW
-#include<string.h>
 
 int main()
 {
-	char a = '*';
-	char arr[ROW][COL] = { ' ' };
-	int i = 0;
-	int j = 0;
-	for (i = 0; i < ROW; i++)
+	int a = 20;
+	int remainder = 0;
+	int count = a;
+	while (a>1)
 	{
-		for (j = 0; j < COL; j++)
-		{
-			arr[i][j] = ' ';
-		}
+		count = count + a/2;
+		remainder = a % 2;
+		a = a / 2 + remainder;
 	}
-	int midCOL = COL / 2 ;
-	int midROW = ROW / 2;
-	for (i = 0; i <=midROW; i++)
-	{
-		for (j = midCOL-i; j <= midCOL+i; j++)
-		{
-			arr[i][j] = '*';
-		}
-	}
-	for (i = midROW + 1; i < ROW; i++)
-	{
-		for (j = 0; j < COL; j++)
-		{
-			arr[i][j] = arr[midROW * 2 - i][j];
-		}
-	}
-	for (i = 0; i < ROW; i++)
-	{
-		for (j = 0; j < COL; j++)
-		{
-			printf("%c", arr[i][j]);
-		}
-		printf("\n");
-	}
+	printf("%d", count);
 	return 0;
 }
+
+//#include<stdio.h>
+//#define ROW 13
+//#define COL ROW
+//#include<string.h>
+//
+//int main()
+//{
+//	char a = '*';
+//	char arr[ROW][COL] = { ' ' };
+//	int i = 0;
+//	int j = 0;
+//	for (i = 0; i < ROW; i++)
+//	{
+//		for (j = 0; j < COL; j++)
+//		{
+//			arr[i][j] = ' ';
+//		}
+//	}
+//	int midCOL = COL / 2 ;
+//	int midROW = ROW / 2;
+//	for (i = 0; i <=midROW; i++)
+//	{
+//		for (j = midCOL-i; j <= midCOL+i; j++)
+//		{
+//			arr[i][j] = '*';
+//		}
+//	}
+//	for (i = midROW + 1; i < ROW; i++)
+//	{
+//		for (j = 0; j < COL; j++)
+//		{
+//			arr[i][j] = arr[midROW * 2 - i][j];
+//		}
+//	}
+//	for (i = 0; i < ROW; i++)
+//	{
+//		for (j = 0; j < COL; j++)
+//		{
+//			printf("%c", arr[i][j]);
+//		}
+//		printf("\n");
+//	}
+//	return 0;
+//}
 
 
 //#include<stdio.h>
