@@ -1,0 +1,3 @@
+﻿  practice.c
+E:\C\StudyPractice\3.27\3.27homework\practice.c(86,1): warning C4047: “初始化”:“char *”与“char (*)[5]”的间接级别不同
+  3.27homework.vcxproj -> E:\C\StudyPractice\3.27\3.27homework\Debug\3.27homework.exe

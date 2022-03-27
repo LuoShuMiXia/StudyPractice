@@ -4,18 +4,53 @@
 
 int main()
 {
-	int a = 20;
-	int remainder = 0;
-	int count = a;
-	while (a>1)
-	{
-		count = count + a/2;
-		remainder = a % 2;
-		a = a / 2 + remainder;
-	}
-	printf("%d", count);
+	int a = -20;
+	unsigned int b = 10;
+
+	printf("%d", a+b);
 	return 0;
 }
+
+//void test3()
+//{
+//	printf("hhhhh");
+//}
+//
+//void test2()
+//{
+//	test3();
+//}
+//
+//void test1()
+//{
+//	test2();
+//}
+//
+//void test()
+//{
+//	test1();
+//}
+//
+//int main()
+//{
+//	test();
+//	return 0;
+//}
+
+//int main()
+//{
+//	int a = 20;
+//	int remainder = 0;
+//	int count = a;
+//	while (a>1)
+//	{
+//		count = count + a/2;
+//		remainder = a % 2;
+//		a = a / 2 + remainder;
+//	}
+//	printf("%d", count);
+//	return 0;
+//}
 
 //#include<stdio.h>
 //#define ROW 13
